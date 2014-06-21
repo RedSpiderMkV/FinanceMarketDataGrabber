@@ -24,9 +24,13 @@ class yahooFinance:
         return paramList[:-1]
 
     def __getRequest(self):
-        request = urllib2.urlopen(self.apiUrl)
-        response = request.read()
-        request.close()
+        try:
+            request = urllib2.urlopen(self.apiUrl)
+            response = request.read()
+            request.close()
+        except Exception as e:
+            print(e)
+            return ''
 
         return response
 
