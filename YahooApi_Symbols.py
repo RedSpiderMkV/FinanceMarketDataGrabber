@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
+# Name:        YahooApi_Symbols
 # Purpose:
 #
-# Author:      Nikeah
+# Author:      RedSpiderMkV
 #
 # Created:     05/06/2014
-# Copyright:   (c) Nikeah 2014
+# Copyright:   (c) RedSpiderMkV 2014
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
