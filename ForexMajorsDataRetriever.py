@@ -5,7 +5,10 @@ def main():
 	stockList = ('USDJPY=X', 'GBPUSD=X', 'EURUSD=X', 'EURJPY=X', 'GBPJPY=X', 'USDCAD=X', 'USDCHF=X')
 	forexData = ForexData(stockList)
 
-	forexData.GetData()
+	forexDataList = forexData.GetData()
+	
+	for data in forexDataList:
+		print(data.Symbol)
 
 if __name__ == '__main__':
     main()
