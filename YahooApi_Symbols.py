@@ -16,6 +16,7 @@ class Pricing:
     Bid_realTime = 'b3'
     PreviousClose = 'p'
     Open = 'o'
+    LastTradeWithTime = 'l1'
 
 class Dividends:
     DividendYield = 'y'
@@ -38,7 +39,6 @@ class Averages:
     Commission = 'c3'
     DayHigh = 'h'
     DayLow = 'g'
-    LastTradeWithTime = 'l1'
     OneYearTargetPrice = 't8'
     Delta200DayMA = 'm5'
     PercentDelta200DayMA = 'm6'
