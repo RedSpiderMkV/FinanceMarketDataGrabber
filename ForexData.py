@@ -18,4 +18,4 @@ class ForexData:
 		for line in forexData.split('\n'):
 			forexDataList.append(ForexDataModel(line))
 			
-			
+		return forexDataList

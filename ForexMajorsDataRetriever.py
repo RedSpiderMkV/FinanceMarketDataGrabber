@@ -6,11 +6,6 @@ def main():
 	forexData = ForexData(stockList)
 
 	forexData.SetData()
-	
-	printStr = forexData.Symbol + " " + forexData.Name + " " + forexData.Bid + " " + forexData.Ask + " " + forexData.Open + " " \
-	+ forexData.PreviousClose + " " + forexData.LastTradeWithTime
-	
-	print(printStr)
 
 if __name__ == '__main__':
     main()
