@@ -16,6 +16,7 @@ class Pricing:
     Bid_realTime = 'b3'
     PreviousClose = 'p'
     Open = 'o'
+    LastTrade = 'l'
     LastTradeWithTime = 'l1'
 
 class Dividends:

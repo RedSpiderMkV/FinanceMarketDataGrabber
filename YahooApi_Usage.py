@@ -15,7 +15,9 @@ from YahooApi_Symbols import *
 def main():
     financeApi = YahooApi.yahooFinance()
     stockList = ('MSFT', 'AAPL', 'GOOG', 'BARC.L')
-    symbolList = (SymbolInfo.Symbol, SymbolInfo.StockExchange, SymbolInfo.Name, Pricing.Ask, Pricing.Bid, Pricing.LastTradeWithTime)
+    #stockList = ('EURUSD=X', 'GBPUSD=X', 'EURGBP=X')
+    symbolList = (SymbolInfo.Symbol, SymbolInfo.StockExchange, SymbolInfo.Name, \
+    Pricing.Ask, Pricing.Bid, Pricing.LastTradeWithTime)
 
     print(financeApi.GetData(stockList, symbolList))
 
