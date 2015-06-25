@@ -9,8 +9,8 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-import YahooApi
-from YahooApi_Symbols import *
+import YahooFinance.YahooApi as YahooApi
+from YahooFinance.YahooApi_Symbols import *
 
 def main():
     financeApi = YahooApi.yahooFinance()
