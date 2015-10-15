@@ -33,9 +33,9 @@ class GoogleFinanceApi:
 
         for stockOb in dataList:
             for symbol in symbolList:
-                stockInfoStr += stockOb[symbol] + ' '
-                
-            stockInfoStr += '\n'
+                stockInfoStr += stockOb[symbol] + ','
+            
+            stockInfoStr = stockInfoStr[:-1] + '\n'
                 
         return stockInfoStr
 

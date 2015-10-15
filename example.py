@@ -20,7 +20,7 @@ import HistoricDataLib.HistoricalQuote_YahooAPI as HistoricalQuote_YahooAPI
 
 def printLines(lst):
     for line in lst:
-        print line
+        print(line)
 
 def main():
     stockList = ('MSFT', 'AAPL', 'BARC.L')
@@ -32,12 +32,12 @@ def main():
 
     print(financeApi.GetData(stockList, symbolList))
 
-    print '\n'    
+    print('\n')
     
     api = GoogleApi.GoogleFinanceApi()
 
     symbolList = [Symbols.ID, Symbols.Index, Symbols.StockSymbol, Symbols.LastTradePrice]
-    print api.GetStockData(stockList, symbolList)
+    print(api.GetStockData(stockList, symbolList))
     
     #data = HistoricalQuote_GoogleAPI.HistoricalQuote()
     #printLines(data.GetData('NASDAQ:AAPL', '6-18-2014', '6-19-2014'))
