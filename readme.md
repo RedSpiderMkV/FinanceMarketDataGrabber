@@ -1,10 +1,7 @@
-#Yahoo Finance API Library
+#Finance API Library
 
-Python library to access stock quotes from Yahoo Finance 'API'.
+Python library to access current stock/forex quotes from Yahoo and Google Finance 'APIs'.  Historic data can also be retrieved.
 
-Example Request
-http://download.finance.yahoo.com/d/quotes.csv?s=GOOG&f=sl1t1d1
+Multiple stock quotes and multiple symbols can be retrieved in a single call, thereby reducing latency and bandwidth usage.
 
-Returns a CSV object which can be parsed.
-
-Multiple stock quotes and multiple symbols can be retrieved in a single call.
+Example requests/responses and usage to be added.
