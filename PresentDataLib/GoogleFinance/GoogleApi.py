@@ -70,6 +70,6 @@ class GoogleFinanceApi:
             print(e)
 
         stockObject = Google_JsonBuilder.StocksFromGoogle(response)
-        self.__buildStockInfoStr(stockObject, symbolList)
+        stockInfoStr = self.__buildStockInfoStr(stockObject, symbolList)
 
         return stockInfoStr
