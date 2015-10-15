@@ -23,19 +23,19 @@ def printLines(lst):
         print line
 
 def main():
-    financeApi = YahooApi.yahooFinance()
-    stockList = ('MSFT', 'AAPL', 'GOOG', 'BARC.L')
+    stockList = ('MSFT', 'AAPL', 'BARC.L')
     #stockList = ('EURUSD=X', 'GBPUSD=X', 'EURGBP=X')
+    
+    financeApi = YahooApi.yahooFinance()
     symbolList = (SymbolInfo.Symbol, SymbolInfo.StockExchange, SymbolInfo.Name, \
     Pricing.Ask, Pricing.Bid, Pricing.LastTradeWithTime)
 
-    #print(financeApi.GetData(stockList, symbolList))
+    print(financeApi.GetData(stockList, symbolList))
 
     print '\n'    
     
     api = GoogleApi.GoogleFinanceApi()
 
-    stockList = ['MSFT', 'AAPL', 'BARC.L']
     symbolList = [Symbols.ID, Symbols.Index, Symbols.StockSymbol, Symbols.LastTradePrice]
     print api.GetStockData(stockList, symbolList)
     
