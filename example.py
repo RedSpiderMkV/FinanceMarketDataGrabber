@@ -29,7 +29,7 @@ def main():
     symbolList = (SymbolInfo.Symbol, SymbolInfo.StockExchange, SymbolInfo.Name, \
     Pricing.Ask, Pricing.Bid, Pricing.LastTradeWithTime)
 
-    print(financeApi.GetData(stockList, symbolList))
+    #print(financeApi.GetData(stockList, symbolList))
 
     print '\n'    
     
@@ -39,13 +39,13 @@ def main():
     symbolList = [Symbols.ID, Symbols.Index, Symbols.StockSymbol, Symbols.LastTradePrice]
     print api.GetStockData(stockList, symbolList)
     
-    data = HistoricalQuote_GoogleAPI.HistoricalQuote()
-    printLines(data.GetData('NASDAQ:AAPL', '6-18-2014', '6-19-2014'))
+    #data = HistoricalQuote_GoogleAPI.HistoricalQuote()
+    #printLines(data.GetData('NASDAQ:AAPL', '6-18-2014', '6-19-2014'))
 
-    print ''    
+    #print ''    
     
-    data = HistoricalQuote_YahooAPI.HistoricalQuote()
-    printLines(data.GetData('AAPL', '6-18-14', '6-19-14'))
+    #data = HistoricalQuote_YahooAPI.HistoricalQuote()
+    #printLines(data.GetData('AAPL', '6-18-14', '6-19-14'))
 
 if __name__ == '__main__':
     main()
