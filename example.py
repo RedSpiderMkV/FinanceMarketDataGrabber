@@ -9,11 +9,11 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-import PresentDataLib.YahooFinance.YahooApi as YahooApi
-from PresentDataLib.YahooFinance.YahooApi_Symbols import *
+import FinanceDataLib.YahooFinance.YahooApi as YahooApi
+from FinanceDataLib.YahooFinance.YahooApi_Symbols import *
 
-import PresentDataLib.GoogleFinance.GoogleApi as GoogleApi
-from PresentDataLib.GoogleFinance.GoogleApi_Symbols import *
+import FinanceDataLib.GoogleFinance.GoogleApi as GoogleApi
+from FinanceDataLib.GoogleFinance.GoogleApi_Symbols import *
 
 import HistoricDataLib.HistoricalQuote_GoogleAPI as HistoricalQuote_GoogleAPI
 import HistoricDataLib.HistoricalQuote_YahooAPI as HistoricalQuote_YahooAPI
@@ -34,8 +34,9 @@ def printYahooQuotes():
 
 def printGoogleQuotes():
     api = GoogleApi.GoogleFinanceApi()
+    symbolList = (GoogleStockSymbols.ID, GoogleStockSymbols.Index, \
+    GoogleStockSymbols.StockSymbol, GoogleStockSymbols.LastTradePrice)
 
-    symbolList = [Symbols.ID, Symbols.Index, Symbols.StockSymbol, Symbols.LastTradePrice]
     print(api.GetStockData(stockList, symbolList))
 
 def printHistoricQuotesGoogle():
@@ -47,8 +48,8 @@ def printHistoricQuotesYahoo():
     printLines(data.GetData('AAPL', '6-18-14', '6-19-14'))
 
 def main():
-    #printYahooQuotes()
-    #printGoogleQuotes()
+    printYahooQuotes()
+    printGoogleQuotes()
     printHistoricQuotesYahoo()
     printHistoricQuotesGoogle()
 

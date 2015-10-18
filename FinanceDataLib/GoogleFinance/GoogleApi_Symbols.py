@@ -9,7 +9,7 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-class Symbols:
+class GoogleStockSymbols:
     ID = 'id'
     StockSymbol = 't'
     Index = 'e'
