@@ -25,7 +25,7 @@ class yahooFinance:
 
     def __getRequest(self):
         response = ''
-        
+
         try:
             request = urllib2.urlopen(self.apiUrl)
             response = request.read()
@@ -42,5 +42,5 @@ class yahooFinance:
         stockList = self.__formatParamList(stocks, '+')
         symbolList = self.__formatParamList(symbols, '')
         self.apiUrl = str.format(self.apiUrl, stockList, symbolList)
-        
-        return self.__getRequest().strip()
+
+        return self.__getRequest()
