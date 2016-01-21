@@ -48,8 +48,14 @@ def printHistoricQuotesYahoo():
     printLines(data.GetData('AAPL', '6-18-14', '6-19-14'))
 
 def main():
+    print('Yahoo Quotes')
+    print('------------')
     printYahooQuotes()
+    
+    print('Google Quotes')
+    print('------------')
     printGoogleQuotes()
+    
     printHistoricQuotesYahoo()
     printHistoricQuotesGoogle()
 
