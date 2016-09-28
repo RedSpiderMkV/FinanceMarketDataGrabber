@@ -1,5 +1,7 @@
 #Finance API Library
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RedSpiderMkV/FinanceMarketDataGrabber/blob/master/LICENSE)
+
 Python library to access current stock/forex quotes from Yahoo and Google Finance 'APIs'.  Historic data can also be retrieved.
 
 Multiple stock quotes and multiple symbols can be retrieved in a single call, thereby reducing latency and bandwidth usage.
