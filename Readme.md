@@ -6,8 +6,6 @@ Python library to access current stock/forex quotes from Yahoo and Google Financ
 
 Multiple stock quotes and multiple symbols can be retrieved in a single call, thereby reducing latency and bandwidth usage.
 
-Example requests/responses and usage to be added.
-
 Usage - Yahoo Finance Live Quotes (delayed by 15 minutes by Yahoo)
 ------------------------------------------------------------------
 
@@ -36,6 +34,8 @@ This will return the following response:
 "AAPL","NMS","Apple Inc.",108.85,108.71,"4:00pm - <b>108.84</b>"
 "BARC.L","LSE","BARCLAYS PLC ORD 25P",189.00,179.50,"5:05pm - <b>181.35</b>"
 ```
+
+More examples can be found in the ```example.py``` file.
 
 Pending
 -------
