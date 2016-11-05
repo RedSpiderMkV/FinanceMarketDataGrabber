@@ -13,7 +13,7 @@ Usage - Yahoo Finance Live Quotes (delayed by 15 minutes by Yahoo)
 
 To retrieve live stock data using the Yahoo Finance API, the following will be required.
 
-```
+```python
 import FinanceDataLib.YahooFinance.YahooApi as YahooApi
 from FinanceDataLib.YahooFinance.YahooApi_Symbols import *
 
@@ -21,7 +21,7 @@ financeApi = YahooApi.yahooFinance()
 ```
 To retrieve stock data, provide a list of stocks of interest as well as a list symbols for each stock.
 
-```
+```python
 stockList = ('MSFT', 'AAPL', 'BARC.L')
 symbolList = (SymbolInfo.Symbol, SymbolInfo.StockExchange, SymbolInfo.Name, \
     Pricing.Ask, Pricing.Bid, Pricing.LastTradeWithTime)
