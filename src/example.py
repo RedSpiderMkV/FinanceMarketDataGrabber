@@ -20,7 +20,7 @@ from FinanceDataLib.GoogleFinance.GoogleApi_Symbols import *
 import HistoricDataLib.HistoricalQuote_GoogleAPI as HistoricalQuote_GoogleAPI
 import HistoricDataLib.HistoricalQuote_YahooAPI as HistoricalQuote_YahooAPI
 
-stockList = ('MSFT', 'AAPL', 'BARC.L', '^FTSE')
+stockList = ('MSFT', 'AAPL', 'BARC.L', '^FTSE', '^FTAI', '^NYA')
 forexList = ('EURUSD=X', 'GBPUSD=X', 'EURGBP=X')
 
 def printLines(lst):

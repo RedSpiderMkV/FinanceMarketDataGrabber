@@ -39,7 +39,5 @@ class yahooFinance:
         stockList = self.__formatParamList(stocks, '+')
         symbolList = self.__formatParamList(symbols, '')
         apiUrl = str.format(self._apiUrlTemplate, stockList, symbolList)
-        
-        print apiUrl
 
         return self.__getRequest(apiUrl)
