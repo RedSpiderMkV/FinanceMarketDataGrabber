@@ -21,7 +21,7 @@ import HistoricDataLib.HistoricalQuote_GoogleAPI as HistoricalQuote_GoogleAPI
 import HistoricDataLib.HistoricalQuote_YahooAPI as HistoricalQuote_YahooAPI
 
 stockList = ('MSFT', 'AAPL', 'BARC.L', '^FTSE')
-#stockList = ('EURUSD=X', 'GBPUSD=X', 'EURGBP=X')
+forexList = ('EURUSD=X', 'GBPUSD=X', 'EURGBP=X')
 
 def printLines(lst):
     for line in lst:
@@ -39,6 +39,7 @@ def printYahooQuotes():
     Pricing.Ask, Pricing.Bid, Pricing.LastTradeWithTime)
 
     print(financeApi.GetData(stockList, symbolList))
+    print(financeApi.GetData(forexList, symbolList))
 
 def printGoogleQuotes():
     api = GoogleApi.GoogleFinanceApi()
@@ -61,19 +62,19 @@ def main():
     print('------------')
     printYahooQuotes()
     
-    print('Google Quotes')
-    print('------------')
-    printGoogleQuotes()
+    #print('Google Quotes')
+    #print('------------')
+    #printGoogleQuotes()
 
-    print('')
-    print('Yahoo Historic Quotes')
-    print('------------')
-    printHistoricQuotesYahoo()
+    #print('')
+    #print('Yahoo Historic Quotes')
+    #print('------------')
+    #printHistoricQuotesYahoo()
     
-    print('')
-    print('Google Historic Quotes')
-    print('------------')
-    printHistoricQuotesGoogle()
+    #print('')
+    #print('Google Historic Quotes')
+    #print('------------')
+    #printHistoricQuotesGoogle()
 
 if __name__ == '__main__':
     main()
