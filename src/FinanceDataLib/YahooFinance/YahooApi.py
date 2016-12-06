@@ -21,7 +21,7 @@ class yahooFinance:
         for param in paramString:
             paramList += param + separator
 
-        return paramList[:-1]
+        return paramList
 
     def __getRequest(self, url):
         response = ''
@@ -36,7 +36,7 @@ class yahooFinance:
         return response
 
     def GetData(self, stocks, symbols):
-        stockList = self.__formatParamList(stocks, '+')
+        stockList = self.__formatParamList(stocks, '+')[:-1]
         symbolList = self.__formatParamList(symbols, '')
         apiUrl = str.format(self._apiUrlTemplate, stockList, symbolList)
 
