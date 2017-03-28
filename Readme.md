@@ -1,4 +1,5 @@
-#Finance API Library
+Finance API Library
+===========
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RedSpiderMkV/FinanceMarketDataGrabber/blob/master/LICENSE)
 
