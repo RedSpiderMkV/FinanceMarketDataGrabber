@@ -44,4 +44,20 @@ Pending
 More information about how to use the Google Finance API and the historical data retriever
 will be provided soon.
 
-As of 05/11/2016, the Google Finance API is still working.
+As of 27/05/2017, the Google Finance API is still working.
+
+Note On Yahoo Finance Historic Data
+-----------------------------------
+
+It appears Yahoo has changed their API, made it secure in such a way that simple HTTP requests no longer work.  For the time being, historic data is no longer working through Yahoo.
+
+The Google Finance API is still working.
+I'm currently looking into other data providers to retrieve historic data from.
+
+So far the following have been found:
+Dukascopy
+AlphaVantage
+
+Libraries to download data from them will be uploaded soon but will probably be in C# since I've grown weary of Python...
+
+Neither provide crypto currency data though.
