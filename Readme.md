@@ -55,7 +55,7 @@ The Google Finance API is still working.
 I'm currently looking into other data providers to retrieve historic data from.
 
 So far the following have been found:
-Dukascopy
+Dukascopy\n
 AlphaVantage
 
 Libraries to download data from them will be uploaded soon but will probably be in C# since I've grown weary of Python...
