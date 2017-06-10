@@ -53,11 +53,6 @@ It appears Yahoo has changed their API, made it secure in such a way that simple
 
 The Google Finance API is still working.
 I'm currently looking into other data providers to retrieve historic data from.
-
-So far the following have been found:
-1. Dukascopy
-2. AlphaVantage
-
 Libraries to download data from them will be uploaded soon but will probably be in C# since I've grown weary of Python...
 
 Neither provide crypto currency data though.
